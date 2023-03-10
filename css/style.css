@@ -8,5 +8,70 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #1b1426;
+    color: #FFFFFF;
+}
+
+
+
+/* CLASSES GENÉRICAS */
+.layout-grid {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+
 /* MOBILE FIRST */
 
+/* HEADER */
+header {
+    height: 60px;
+    background-color: #1b1426;
+}
+
+header .header-top {
+    display: none;
+}
+
+/* HEADER BOTTOM */
+
+/* justify content + align items */
+.alinhamento-between-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .header-bottom {
+    height: 100%;
+}
+
+header .header-bottom .logo {
+    width: 86px;
+    height: 25px;
+}
+
+header .header-bottom nav {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 80vw;
+    height: calc(100vh - 60px);
+
+    
+    /* justify-content: space-evenly;
+    background-color: #F9003D;
+    opacity: 0;
+    transition: left 0.4s, opacity 0.6s; */
+
+
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    background-color: grey;
+}
+
+header .header-bottom .menu-usuario {
+    display: none;
+}
